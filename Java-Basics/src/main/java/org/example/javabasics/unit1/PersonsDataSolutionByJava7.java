@@ -1,4 +1,4 @@
-package org.example.lamdabasics;
+package org.example.javabasics.unit1;
 
 import java.util.Comparator;
 import java.util.List;

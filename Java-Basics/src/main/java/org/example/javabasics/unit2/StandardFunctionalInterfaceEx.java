@@ -1,9 +1,14 @@
-package org.example.lamdabasics;
+package org.example.javabasics.unit2;
+
+import org.example.javabasics.unit1.Condition;
+import org.example.javabasics.unit1.Person;
+import org.example.javabasics.unit1.PersonsDataSolutionByJava8;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 
-public class Unit1ExerciseSolutionByJava8 {
+public class StandardFunctionalInterfaceEx {
 
     public static void main(String[] args) {
         //call persons data
@@ -19,8 +24,11 @@ public class Unit1ExerciseSolutionByJava8 {
         sol.printPersonsDataByCondition(personsList,(person)->true);
         //create persons data to print lastname begins with C
         System.out.println("printing all the data which lastname starts with c-->");
-        Condition condition = (person) -> person.getLastName().startsWith("C");
-        sol.printPersonsDataByCondition(personsList,condition);
+        Predicate<Person> predicate = (person) -> person.getLastName().startsWith("C");
+
+        //implemented consumer logic
+        //p->System.out.println(p) is nothing but consumer
+        sol.printPersonsDataByPredicate(personsList,predicate,p->System.out.println(p));
 
     }
 

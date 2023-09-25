@@ -1,7 +1,8 @@
-package org.example.lamdabasics;
+package org.example.javabasics.unit1;
 
-import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class PersonsDataSolutionByJava8 {
 
@@ -24,11 +25,20 @@ public class PersonsDataSolutionByJava8 {
     /**
      * Create methhod that print all persons data wchich last name begins with C
      */
-    public void printPersonsDataByCondition(List<Person> personsList,Condition condition){
+    public void printPersonsDataByCondition(List<Person> personsList, Condition condition){
 
         for (Person person:personsList) {
             if(condition.test(person)){
                 System.out.println(person);
+            }
+        }
+    }
+
+    public void printPersonsDataByPredicate(List<Person> personsList, Predicate<Person> predicate,Consumer<Person> consumer) {
+
+        for (Person person:personsList) {
+            if(predicate.test(person)){
+                consumer.accept(person);
             }
         }
     }

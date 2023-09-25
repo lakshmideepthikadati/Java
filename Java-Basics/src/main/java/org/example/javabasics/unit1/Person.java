@@ -1,4 +1,4 @@
-package org.example.lamdabasics;
+package org.example.javabasics.unit1;
 
 public class Person {
         private String firstName;

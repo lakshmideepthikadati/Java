@@ -1,10 +1,9 @@
 package org.example.lamdabasics;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class PersonsDataSolution {
+public class PersonsDataSolutionByJava7 {
 
     //sort list by lastname
    public void sortPersonsListByComparator(List<Person> personsList){

@@ -28,10 +28,10 @@ public class PersonsDataSolution {
     /**
      * Create methhod that print all persons data wchich last name begins with C
      */
-    public void printPersonsDataByLastNameBeginsWithC(List<Person> personsList){
+    public void printPersonsDataByCondition(List<Person> personsList,Condition condition){
 
         for (Person person:personsList) {
-            if(person.getLastName().startsWith("C")){
+            if(condition.test(person)){
                 System.out.println(person);
             }
         }

@@ -16,7 +16,13 @@ public class Unit1ExerciseSolutionByJava7 {
 
         sol.printPersonsData(personsList);
         //create persons data to print lastname begins with C
-        sol.printPersonsDataByLastNameBeginsWithC(personsList);
+        Condition condition =  new Condition() {
+            @Override
+            public boolean test(Person person) {
+                return person.getLastName().startsWith("C");
+            }
+        };
+        sol.printPersonsDataByCondition(personsList,condition);
 
     }
 

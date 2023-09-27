@@ -1,4 +1,4 @@
-package com.example.javabasics.unit3;
+package org.example.javabasics.unit3;
 
 import org.example.javabasics.unit1.Condition;
 import org.example.javabasics.unit1.Person;

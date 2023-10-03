@@ -1,4 +1,4 @@
-package coom.example.telusko.javabasics.unit2;
+package com.example.telusko.javabasics.unit2;
 
 import java.util.ArrayList;
 import java.util.Collections;

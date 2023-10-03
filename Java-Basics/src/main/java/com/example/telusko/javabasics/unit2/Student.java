@@ -1,6 +1,4 @@
-package coom.example.telusko.javabasics.unit2;
-
-import java.util.Comparator;
+package com.example.telusko.javabasics.unit2;
 
 public class Student implements Comparable<Student> {
 

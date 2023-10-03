@@ -1,4 +1,4 @@
-package com.example.telusko.javabasics.unit1;
+package org.example.telusko.javabasics.unit12;
 
 import java.io.BufferedReader;
 import java.io.IOException;

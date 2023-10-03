@@ -1,4 +1,4 @@
-package com.example.telusko.javabasics.unit1;
+package org.example.telusko.javabasics.unit12;
 
 public class ThreadsEx {
     public static void main(String[] args) {

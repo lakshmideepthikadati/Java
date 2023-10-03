@@ -1,4 +1,4 @@
-package org.example.telsuko.unit1;
+package org.example.telsuko.javabasics.unit1;
 
 import java.util.Arrays;
 import java.util.List;

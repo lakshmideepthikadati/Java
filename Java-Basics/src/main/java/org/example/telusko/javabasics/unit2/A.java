@@ -1,9 +1,9 @@
-package org.example.telusko.javabasics.unit12;
+package org.example.telusko.javabasics.unit2;
 
-public class ARunnable implements Runnable{
-    @Override
-    public void run() {
-        for (int i=0;i<5;i++){
+public class A extends  Thread{
+
+    public  void run(){
+        for (int i=0;i<100;i++){
             System.out.println("HI from A class");
             try {
                 Thread.sleep(1000);

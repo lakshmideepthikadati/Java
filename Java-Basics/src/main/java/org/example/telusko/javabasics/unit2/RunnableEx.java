@@ -1,4 +1,4 @@
-package org.example.telusko.javabasics.unit12;
+package org.example.telusko.javabasics.unit2;
 
 public class RunnableEx {
     public static void main(String[] args) {

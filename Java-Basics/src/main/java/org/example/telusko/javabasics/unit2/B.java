@@ -1,4 +1,4 @@
-package org.example.telusko.javabasics.unit12;
+package org.example.telusko.javabasics.unit2;
 
 public class B extends  Thread{
     public  void run(){

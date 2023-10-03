@@ -2,7 +2,7 @@ package coom.example.telusko.javabasics.unit2;
 
 import java.util.*;
 
-public class SortExample {
+public class ComparatorExample {
     public static void main(String[] args) {
 
         List<Integer> list = new ArrayList<>();
@@ -17,14 +17,15 @@ public class SortExample {
 
         System.out.println(list);
 
-        Collections.sort(list,(Integer i, Integer j) ->{
 
-            if(i%10 > j%10){
-                return 1;
-            }else{
-                return -1;
-            }
-            });
+                Collections.sort(list, (Integer i, Integer j) -> {
+
+                    if (i % 10 > j % 10) {
+                        return 1;
+                    } else {
+                        return -1;
+                    }
+                });
         System.out.println(list);
     }
 }
